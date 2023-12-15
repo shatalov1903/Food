@@ -87,6 +87,8 @@
     height: 48px;
     position: relative;
     padding: 14px;
+    border-radius: 16px;
+    background: var(--c-primary-light);
 
     .number {
       position: absolute;
