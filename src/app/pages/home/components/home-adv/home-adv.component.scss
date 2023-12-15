@@ -1,0 +1,68 @@
+.adv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 24px 0 32px 0;
+}
+
+.adv-card {
+  display: flex;
+  gap: 16px;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 16px;
+  padding-right: 10px;
+
+  &_left {
+    background: var(--c-primary-light);
+  }
+
+  &_right {
+    background: var(--c-secondary-light);
+  }
+
+  &__img {
+    max-width: 300px;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    color: var(--c-neutral-black);
+    font-family: var(--ff);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    font-family: var(--ff);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0.1px;
+    margin-bottom: 36px;
+
+    &_left {
+      color: var(--c-primary-default);
+    }
+
+    &_right {
+      color: var(--c-secondary-default);
+    }
+  }
+
+  &__name {
+    color: var(--c-neutral-gray);
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-bottom: 16px;
+  }
+}

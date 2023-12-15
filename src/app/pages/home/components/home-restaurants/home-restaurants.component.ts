@@ -58,5 +58,56 @@ export class HomeRestaurantsComponent {
       }
     ]
   },
+  {
+    img: 'assets/restaurants/rest.png',
+    title: 'Royal Sushi House',
+    time: '30-40 min',
+    price: '$32 min sum',
+    cart: 3,
+    tags: [
+      {
+        title: 'Sushi',
+        img: 'assets/restaurants/sushi.png'
+      },
+      {
+        title: 'Burger',
+        img: 'assets/restaurants/burger.png'
+      }
+    ]
+  },
+  {
+    img: 'assets/restaurants/rest.png',
+    title: 'Royal Sushi House',
+    time: '30-40 min',
+    price: '$32 min sum',
+    cart: 4,
+    tags: [
+      {
+        title: 'Sushi',
+        img: 'assets/restaurants/sushi.png'
+      },
+      {
+        title: 'Burger',
+        img: 'assets/restaurants/burger.png'
+      }
+    ]
+  },
+  {
+    img: 'assets/restaurants/rest.png',
+    title: 'Royal Sushi House',
+    time: '30-40 min',
+    price: '$32 min sum',
+    cart: 5,
+    tags: [
+      {
+        title: 'Sushi',
+        img: 'assets/restaurants/sushi.png'
+      },
+      {
+        title: 'Burger',
+        img: 'assets/restaurants/burger.png'
+      }
+    ]
+  },
  ]
 }
