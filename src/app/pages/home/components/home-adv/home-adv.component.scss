@@ -12,6 +12,13 @@
   width: 100%;
   border-radius: 16px;
   padding-right: 10px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  @media (min-width: 992px) {
+    &:hover {
+      border-color: var(--c-primary-hover);
+    }
+  }
 
   &_left {
     background: var(--c-primary-light);

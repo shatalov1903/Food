@@ -1,24 +1,32 @@
 <div class="restaurants">
-  <div class="restaurants__title"></div>
+  <div class="restaurants__title">Nearby restaurants</div>
   <div class="restaurants__list">
-    <div class="restaurants-item" *ngFor="let item of restaurants">
+    <a routerLink="/" class="restaurants-item" *ngFor="let item of restaurants">
       <div class="restaurants-item__img">
         <img [src]="item.img" [alt]="item.title" />
       </div>
-      <div class="restaurants-item__title">{{ item.title }}</div>
-      <div class="restaurants-item__time">{{ item.time }}</div>
-      <div class="restaurants-item__price">{{ item.price }}</div>
-      <div class="restaurants-item__tags">
-        <div class="restaurants-item__tag" *ngFor="let tag of item.tags">
-          <img [src]="tag.img" [alt]="tag.title" />
-          {{ tag.title }}
+      <div class="restaurants-item__card">
+        <div class="restaurants-item__info-title">
+          <div class="restaurants-item__title">{{ item.title }}</div>
+          <div class="restaurants-item__cart">
+            <img [src]="item.cartImg" [alt]="item.cartTitle" />
+            <!-- <div *ngIf="item.cart">Active</div>
+            {{ item.cart }} -->
+          </div>
+        </div>
+        <div class="restaurants-item__info-time">
+          <img [src]="item.timeImg" [alt]="item.timeTitle" />
+          <div class="restaurants-item__time">{{ item.time }}</div>
+          <img [src]="item.dotImg" [alt]="item.dotTitle" />
+          <div class="restaurants-item__price">{{ item.price }}</div>
+        </div>
+        <div class="restaurants-item__tags">
+          <div class="restaurants-item__tag" *ngFor="let tag of item.tags">
+            <img [src]="tag.img" [alt]="tag.title" />
+            <div class="restaurants-item__name">{{ tag.title }}</div>
+          </div>
         </div>
       </div>
-      <div class="restaurants-item__cart">
-        Cart
-        <div *ngIf="item.cart">Active</div>
-        {{ item.cart }}
-      </div>
-    </div>
+    </a>
   </div>
 </div>

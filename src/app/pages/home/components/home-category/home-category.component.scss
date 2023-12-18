@@ -13,6 +13,12 @@
   padding: 14px 0;
   border: 1px solid var(--c-light-gray);
   background: var(--c-white);
+  transition: var(--transition);
+  @media (min-width: 992px) {
+    &:hover {
+      border-color: var(--c-primary-hover);
+    }
+  }
 
   &__img {
   }
@@ -27,18 +33,11 @@
     margin-top: 12px;
   }
 
-  &_cursor {
-    border-color: var(--c-primary-hover);
-    position: relative;
+  // // &_cursor {
+  // //   border-color: var(--c-primary-hover);
+  // // }
 
-    .hand {
-      position: absolute;
-      top: 38px;
-      left: 12px;
-    }
-  }
-
-  &_active {
-    border: 3px solid var(--c-primary-default);
-  }
+  // &_active {
+  //   border: 3px solid var(--c-primary-default);
+  // }
 }
